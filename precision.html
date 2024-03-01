@@ -19,6 +19,7 @@
 
     <button type="button" onclick="startTime()">Start Time.</button>
     <button type="button" onclick="recordTime()">Stop Time.</button>
+    <button type="button" onclick="randomTimer()">Start Timer</button>
 
 
 
@@ -51,6 +52,12 @@
                 }
             },4000)
         }
+
+        function randomTimer() {
+            const random = Math.floor(Math.random() * 9) + 2;
+            document.getElementById("random").innerText = random ;
+        }
+
 
         
 
